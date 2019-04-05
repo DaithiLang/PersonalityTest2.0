@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myers-Briggs Personality Test 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="FYP.css">
+<script src="./fyp.js"></script>
+</head>
+<body>
+
+<section style="background-color:rgb(48,35,53);">
+  <img class="mySlides" src="Pictures/intj.jpg">
+  <img class="mySlides" src="Pictures/intp.jpg">
+  <img class="mySlides" src="Pictures/entj.jpg">
+  <img class="mySlides" src="Pictures/entp.jpg">
+  <img class="mySlides" src="Pictures/infj.jpg">
+  <img class="mySlides" src="Pictures/infp.jpg">
+  <img class="mySlides" src="Pictures/enfj.jpg">
+  <img class="mySlides" src="Pictures/enfp.jpg">
+  <img class="mySlides" src="Pictures/istj.jpg">
+  <img class="mySlides" src="Pictures/isfj.jpg">
+  <img class="mySlides" src="Pictures/estj.jpg">
+  <img class="mySlides" src="Pictures/esfj.jpg">
+  <img class="mySlides" src="Pictures/istp.jpg">
+  <img class="mySlides" src="Pictures/isfp.jpg">
+  <img class="mySlides" src="Pictures/estp.jpg">
+  <img class="mySlides" src="Pictures/esfp.jpg">
+</section>
+
+<div class="navbar">
+  <a href="test.html" class="active">Personality Test 2.0</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Personality Types
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+      <a class="a" href="intj.html">INTJ</a>
+      <a class="a" href="intp.html">INTP</a>
+      <a class="a" href="entj.html">ENTJ</a>
+	  <a class="a" href="entp.html">ENTP</a>
+	  <a class="b" href="infj.html">INFJ</a>
+      <a class="b" href="infp.html">INFP</a>
+      <a class="b" href="enfj.html">ENFJ</a>
+	  <a class="b" href="enfp.html">ENFP</a>
+	  <a class="c" href="istj.html">ISTJ</a>
+      <a class="c" href="isfj.html">ISFJ</a>
+      <a class="c" href="estj.html">ESTJ</a>
+	  <a class="c" href="esfj.html">ESFJ</a>
+	  <a class="d" href="istp.html">ISTP</a>
+      <a class="d" href="isfp.html">ISFP</a>
+      <a class="d" href="estp.html">ESTP</a>
+	  <a class="d" href="esfp.html">ESFP</a>
+    </div>
+  </div>
+  <a href="AboutMe.html">About Me & My FYP</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="right">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Pictures/allTypes.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<div class="row">
+  <div class="side">
+    <h2 style="text-align:left;">About Me</h2>
+    <img src="Pictures/ME.jpg" class="me" style="height:200px;">
+	<p style="font-size:22px;"><b>David Langley</b></p>
+	<p>Computer Science & IT Student</p>
+	<p>22 years old</p>
+	<p>From Gorey, County Wexford</p>
+    <p style="font-size:22px;">My Personality Type</p>
+    <p>My personality type is <b>INFP</b>, <b>Mediator</b>. We comprise just <b>4%</b> of the population. My experience when learning about my personality type
+	started off, dubious but once I continued reading, I started to believe. The description for me on
+	the <a href="https://www.16personalities.com/infp-personality"><b>website</b></a> is bang on the money, bar one feature
+	which is out of their control, which is being good at languages. I have a slight listening problem
+	where I don't hear sounds quite right sometimes, which makes it difficult with dealing with languages.</p>
+   <img src="Pictures/infp.png" class="INFP">
+   <p class="credit">credit for above to: <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjit5-gzevgAhVlTBUIHWV4CqMQMwhLKAowCg&url=https%3A%2F%2Fwww.personalityperfect.com%2Finfp-the-idealist-personality-type%2F&psig=AOvVaw3PH5d8Yph3P4nfxGn3kpwJ&ust=1551896001440491&ictx=3&uact=3">www.personalityperfect.com</a></p>
+  </div>
+  <div class="main">
+    <h2>About my Project</h2>
+    <h5>4th Year Project ~~ Myers-Briggs Personality Test</h5>
+    <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+	<img src="Pictures/MyersBriggsTypes.png" class="types" >
+    <p3>Different Personality Types - What Each Letter Means</p3><br><hr>
+    <p2>1. Favourite World</p2><br><hr>
+	<p1>Extroversion(E)</p1>
+	<p>I like getting my energy from active involvement in events and having a lot of different activities.
+ I’m excited when I’m around and I like to energize other people. I like moving into action and making
+ things happen. I generally feel at home in the world. I often understand a problem better when I 
+ can talk out loud about it and hear what others have to say.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I am seen as "outgoing" or as a "people person."</p><p>
+•	I feel comfortable in groups and like working in them.</p><p>
+•	I have a wide range of friends and know lots of people.</p><p>
+•	I sometimes jump too quickly into an activity and don't allow enough time to think it over.</p><p>
+•	Before I start a project, I sometimes forget to stop and get clear on what I want to do and why.</p>
+<hr>
+<p1>Introversion (I)</p1>
+<p>I like getting my energy from dealing with the ideas, pictures, memories, and reactions
+ that are inside my head, in my inner world. I often prefer doing things alone or with one
+ or two people I feel comfortable with. I take time to reflect so that I have a clear idea
+ of what I'll be doing when I decide to act. Ideas are almost solid things for me.
+ Sometimes I like the idea of something better than the real thing.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I am seen as "reflective" or "reserved."</p><p>
+•	I feel comfortable being alone and like things I can do on my own.</p><p>
+•	I prefer to know just a few people well.</p><p>
+•	I sometimes spend too much time reflecting and don't move into action quickly enough.</p><p>
+•	I sometimes forget to check with the outside world to see if my ideas really fit the experience.</p>
+<hr><p2>2. Information</p2><br><hr>
+<p1>Sensing (S)</p1>
+<p>Paying attention to physical reality, what I see, hear, touch, taste, and smell. 
+I'm concerned with what is actual, present, current, and real. I notice facts and
+ I remember details that are important to me. I like to see the practical use of things
+ and learn best when I see how to use what I'm learning. Experience speaks to me louder than words.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I remember events as snapshots of what actually happened.</p><p>
+•	I solve problems by working through facts until I understand the problem.</p><p>
+•	I am pragmatic and look to the "bottom line".</p><p>
+•	I start with facts and then form a big picture.</p><p>
+•	I trust experience first and trust words and symbols less.</p><p>
+•	Sometimes I pay so much attention to facts, either present or past, that I miss new possibilities.</p>
+<hr><p1>Intuition (N)</p1><p>
+Paying the most attention to impressions or the meaning and patterns of the information I get. 
+I would rather learn by thinking a problem through than by hands-on experience. I'm interested 
+in new things and what might be possible, so that I think more about the future than the past.
+ I like to work with symbols or abstract theories, even if I don't know how I will use them.
+ I remember events more as an impression of what it was like than as actual facts or details of
+ what happened.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I remember events by what I read "between the lines" about their meaning.</p><p>
+•	I solve problems by leaping between different ideas and possibilities.</p><p>
+•	I am interested in doing things that are new and different.</p><p>
+•	I like to see the big picture, then to find out the facts.</p><p>
+•	I trust impressions, symbols, and metaphors more than what I actually experienced</p><p>
+•	Sometimes I think so much about new possibilities that I never look at how to make them a reality.
+</p><hr>
+<p2>3. Decisions</p2><br><hr>
+<p1>Thinking (T)</p1>
+<p>When I make a decision, I like to find the basic truth or principle to be applied, 
+regardless of the specific situation involved. I like to analyze pros and cons, and then 
+be consistent and logical in deciding. I try to be impersonal, so I won't let my personal 
+wishes--or other people's wishes--influence me.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I enjoy technical and scientific fields where logic is important.</p><p>
+•	I notice inconsistencies.</p><p>
+•	I look for logical explanations or solutions to most everything.</p><p>
+•	I make decisions with my head and want to be fair.</p><p>
+•	I believe telling the truth is more important than being tactful.</p><p>
+•	Sometimes I miss or don't value the "people" part of a situation.</p><p>
+•	I can be seen as too task-oriented, uncaring, or indifferent.
+</p>
+<hr>
+<p1>Feeling (F)</p1>
+<p>I believe I can make the best decisions by weighing what people care about and the points-of-view
+ of persons involved in a situation. I am concerned with values and what is the best for the people 
+ involved. I like to do whatever will establish or maintain harmony. In my relationships, 
+ I appear caring, warm, and tactful.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I have a people or communications orientation.</p><p>
+•	I am concerned with harmony and nervous when it is missing.</p><p>
+•	I look for what is important to others and express concern for others.</p><p>
+•	I make decisions with my heart and want to be compassionate.</p><p>
+•	I believe being tactful is more important than telling the "cold" truth.</p><p>
+•	Sometimes I miss seeing or communicating the "hard truth" of situations.</p><p>
+•	I am sometimes experienced by others as too idealistic, mushy, or indirect.
+</p>
+<hr><p2>4. Structure</p2><br><hr>
+<p1>Judging (J)</p1>
+<p>I use my decision-making (Judging) preference (whether it is Thinking or Feeling) in my outer life.
+ To others, I seem to prefer a planned or orderly way of life, like to have things settled and organized,
+ feel more comfortable when decisions are made, and like to bring life under control as much as possible.
+Since this pair only describes what I prefer in the outer world, I may, inside, feel flexible and open to
+ new information (which I am).Do not confuse Judging with judgmental, in its negative sense about people 
+ and events. They are not related.</p><p4>
+The following statements generally apply to me:</p4><p>
+•	I like to have things decided.</p><p>
+•	I appear to be task oriented.</p><p>
+•	I like to make lists of things to do.</p><p>
+•	I like to get my work done before playing.</p><p>
+•	I plan work to avoid rushing just before a deadline.</p><p>
+•	Sometimes I focus so much on the goal that I miss new information.
+</p><hr>
+<p1>Perceiving (P)</p1><p>
+I use my perceiving function (whether it is Sensing or Intuition) in my outer life. To others, I seem 
+to prefer a flexible and spontaneous way of life, and I like to understand and adapt to the world rather
+ than organize it. Others see me staying open to new experiences and information. 
+Since this pair only describes what I prefer in the outer world, inside I may feel very planful or
+ decisive (which I am).Remember, in type language perceiving means "preferring to take in information."
+ It does not mean being "perceptive" in the sense of having quick and accurate perceptions about people
+ and events.</p>
+ <p4>The following statements generally apply to me:</p4><p>
+•	I like to stay open to respond to whatever happens.</p><p>
+•	I appear to be loose and casual. I like to keep plans to a minimum.</p><p>
+•	I like to approach work as play or mix work and play.</p><p>
+•	I work in bursts of energy.</p><p>
+•	I am stimulated by an approaching deadline.</p><p>
+•	Sometimes I stay open to new information so long I miss making decisions when they are needed.
+</p><hr>
+<p3>Individual Personality Types and Their Categories</p3><br><div class="a"><hr>
+<p2>Analysts:</p2><p>
+“Architect” – INTJ - Imaginative and strategic thinkers, with a plan for everything</p><p>
+“Logician” – ENTP – Innovative inventors with an unquenchable thirst for knowledge</p><p>
+“Commander” – ENTJ – Bold, imaginative and strong-willed leaders, always finding a way – or making one.</p><p>
+“Debater” – ENTP – Smart and curious thinkers who cannot resist an intellectual challenge.</p><hr></div><div class="b"><hr><p2>
+Diplomats:</p2><p>
+	“Advocate” – INFJ – Quiet and mystical, yet very inspiring and tireless idealists.</p><p>
+	“Mediator” – INFP- Poetic, kind, altruistic people, always eager to help a good cause.</p><p>
+	“Protagonist” – ENFJ – Charismatic and inspiring leaders, able to mesmerize their listeners.</p><p>
+	“Campaigner” – ENFP – Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.</p><hr></div><div class="c"><hr><p2>
+Sentinels:</p2><p>
+	“Logistician” – ISTJ – Practical and fact-minded individuals, whose reliability cannot be doubted.</p><p>
+	“Defender” – ISFJ – Very dedicated and warm protectors, always ready to defend their loved ones.</p><p>
+“Executive” – ESTJ – Excellent administrators, unsurpassed at managing things – or people.</p><p>
+“Consul” – ESFJ – Extraordinarily caring, social and popular people, always eager to help.</p><hr></div><div class="d"><hr><p2>
+Explorers:</p2><p>
+	“Virtuoso” – ISTP – bold and practical experimenters, masters of all kinds of tools.</p><p>
+	“Adventurer” – ISFP – flexible and charming artists, always ready to explore and experience something new.</p><p>
+	“Entrepreneur” – ESTP – Smart, energetic and very perceptive people, who truly enjoy living on the edge.</p><p>
+	“Entertainer” – ESFP – Spontaneous, energetic and enthusiastic people – life is never boring around them.
+</p><hr></div>
+</div>
+</div>
+
+<div class="footer">
+  <h2>Credits</h2>
+  <p>The pictures in my slideshow at the top of every page are from <a href="http://www.personalitytypes.xyz">http://www.personalitytypes.xyz</a>. </p>
+  <p>The information for what each letter means comes from <a href="https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/">https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/</a>.</p>
+  <p>Information on individual personality types comes from <a href="https://www.16personalities.com/personality-types">https://www.16personalities.com/personality-types</a>.</p>
+  </div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+
+</script>
+
+</body>
+</html>

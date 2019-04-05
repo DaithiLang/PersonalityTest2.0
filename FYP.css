@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+p1{
+font-size: 17px;
+text-decoration:underline;
+}
+
+p2{
+font-size: 19px;
+}
+
+p3{
+font-size: 24px;
+font-weight:bold;
+}
+
+p4{
+font-weight:bold;
+}
+
+.INFP{
+	width:100%;
+}
+
+.fpc{
+	width:100%;
+	
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.a {
+  background-color: rgb(218,210,255);
+}
+
+.b {
+  background-color: rgb(177,255,190);
+}
+
+.c {
+  background-color: rgb(175,212,255);
+}
+
+.d {
+  background-color: rgb(255,255,182);
+}
+
+.strength{
+	background-color: rgb(177,255,190);
+}
+
+.weakness{
+	background-color:rgb(242, 191, 133);
+}
+
+.career{
+	background-color:rgb(143, 159, 247);
+}
+
+.relationship{
+	background-color:rgb(252, 186, 246);
+}
+
+.show {
+  display: block;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+   background-color: #3ac4bb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+  text-align:center;
+}
+
+.oneOfTwo {
+  -ms-flex: 35%; /* IE10 */
+  flex: 35%;
+   background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+}
+
+.twoOfTwo {
+  -ms-flex: 35%; /* IE10 */
+  flex: 35%;
+   background-color: #65C369;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: rgb(255,255,255);
+  background-color: rgb(249, 124, 124);
+}
+
+.credit{
+text-align: right;
+  color: rgb(255,255,255);	
+  font-size:10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }  
+}
+.mySlides {
+  margin:auto;
+  width:70%;
+  }
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 90%;
+}
+
+img.me{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+.types{
+	width:80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+#after_submit {
+	left: 25%;
+	top: 30%;
+	display: none;
+	background: #6b8ce5;
+	padding: 10px 20px 10px 20px;
+	width: 50%;
+	border-radius: 20px;
+	font-size: 25px;
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin:  auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*For Test*/
+.text{
+  padding:1% 1%;
+  font-size: auto;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #333;
+	background-color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+}
+
+h3{
+	text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #2e75cc;
+	max-width: 100%;
+	margin: 20px auto;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+h4{
+	text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #2e75cc;
+	max-width: 75%;
+	margin: 20px auto;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2fcc71;
+	max-width: 40%;
+	margin: 20px auto;
+}
+
+/* CONTAINERS */
+
+.container {max-width: 850px; width: 100%; margin: auto;}
+.four { width: 32.26%; max-width: 32.26%;}
+.three {width: 49%; max-width: 49%;}
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .testQs input{
+	display: none;
+}
+
+.form label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 21px;
+	text-align: center;
+	//height: 100px;
+  padding: 3%;
+	line-height: 30px;
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ .form .testQs input:checked +label{
+	border: 3px solid #333;
+	background-color: #2fcc71;
+}
+
+form .testQs input:checked + label:after{
+	content: "\2713";
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+	border: 2px solid #333;
+	background-color: #2fcc71;
+	z-index: 0;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+
+
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0;
+	background-color: #2fcc71;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.submit:hover{
+	cursor: pointer;
+	transform: rotateX(360deg);
+}

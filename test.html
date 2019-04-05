@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myers-Briggs Personality Test 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./fyp.js"></script>
+<link rel="stylesheet" type="text/css" href="fyp.css"></head>
+<body>
+
+<section style="background-color:rgb(48,35,53);">
+  <img class="mySlides" src="Pictures/intj.jpg">
+  <img class="mySlides" src="Pictures/intp.jpg">
+  <img class="mySlides" src="Pictures/entj.jpg">
+  <img class="mySlides" src="Pictures/entp.jpg">
+  <img class="mySlides" src="Pictures/infj.jpg">
+  <img class="mySlides" src="Pictures/infp.jpg">
+  <img class="mySlides" src="Pictures/enfj.jpg">
+  <img class="mySlides" src="Pictures/enfp.jpg">
+  <img class="mySlides" src="Pictures/istj.jpg">
+  <img class="mySlides" src="Pictures/isfj.jpg">
+  <img class="mySlides" src="Pictures/estj.jpg">
+  <img class="mySlides" src="Pictures/esfj.jpg">
+  <img class="mySlides" src="Pictures/istp.jpg">
+  <img class="mySlides" src="Pictures/isfp.jpg">
+  <img class="mySlides" src="Pictures/estp.jpg">
+  <img class="mySlides" src="Pictures/esfp.jpg">
+</section>
+
+<div class="navbar">
+  <a href="test.html" class="active">Personality Test 2.0</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Personality Types
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+      <a class="a" href="intj.html">INTJ</a>
+      <a class="a" href="intp.html">INTP</a>
+      <a class="a" href="entj.html">ENTJ</a>
+	  <a class="a" href="entp.html">ENTP</a>
+	  <a class="b" href="infj.html">INFJ</a>
+      <a class="b" href="infp.html">INFP</a>
+      <a class="b" href="enfj.html">ENFJ</a>
+	  <a class="b" href="enfp.html">ENFP</a>
+	  <a class="c" href="istj.html">ISTJ</a>
+      <a class="c" href="isfj.html">ISFJ</a>
+      <a class="c" href="estj.html">ESTJ</a>
+	  <a class="c" href="esfj.html">ESFJ</a>
+	  <a class="d" href="istp.html">ISTP</a>
+      <a class="d" href="isfp.html">ISFP</a>
+      <a class="d" href="estp.html">ESTP</a>
+	  <a class="d" href="esfp.html">ESFP</a>
+    </div>
+  </div>
+  <a href="AboutMe.html">About Me & My FYP</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="right">Login</a>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Pictures/allTypes.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<div id="after_submit">
+<span class="close" onclick="closeModal()">&times;</span>
+<p style="color:#910f18">CONGRATULATIONS!</p>
+<p style="color:#FFFFFF">Your personality test is:</p>
+<p style="color:#FFFFFF" id="type"></p> 
+<p style="color:#FFFFFF">You should read up about your personality type</p>
+</div>
+
+<div class="container">
+		<h1>Personality Test 2.0</h1>
+		<form class="form cf" name="PT">
+		<h3>Part 1. Which answer comes closer to telling how you usually feel or act?</h3>
+			<section class="testQs cf">
+				<h2>1. When you go somewhere for the day,would you rather:</h2>
+				<input type="radio" name="radio1" id="1" value="1"><label class=" three col " for="1">Plan what you will do and when</label>
+				<input type="radio" name="radio1" id="2" value="2" ><label class=" three col" for="2">Just go for it</label>
+			</section>
+			<section class="testQs cf">
+				<h2>2. If you were a teacher, would you rather teach:</h2>
+				<input type="radio" name="radio2" id="3" value="3" ><label class=" three col" for="3">Fact courses</label>
+				<input type="radio" name="radio2" id="4" value="4"><label class=" three col" for="4">Courses involving theory</label>
+			</section>
+			<section class="testQs cf">
+				<h2>3. Are you usually:</h2>
+				<input type="radio" name="radio3" id="5" value="5"><label class=" three col" for="5">A 'Good Mixer'</label>
+				<input type="radio" name="radio3" id="6" value="6"><label class=" three col" for="6">Rather quiet and reserved</label>
+				</section>	
+			<section class="testQs cf">
+				<h2>4. Do you more often:</h2>
+				<input type="radio" name="radio4" id="7" value="7"><label class=" three col " for="7">Your heart rules your head</label>
+				<input type="radio" name="radio4" id="8" value="8" ><label class=" three col" for="8">Your head rules your heart</label>
+					</section>
+			<section class="testQs cf">
+				<h2>5. In doing something in the same way that many other people do it, does it appeal to you more to:</h2>
+				<input type="radio" name="radio5" id="9" value="9" ><label class=" three col" for="9">Invent a way of your own of doing it</label>
+				<input type="radio" name="radio5" id="10" value="10"><label class=" three col" for="10">Do it in the accepted way</label>
+			</section>
+				<section class="testQs cf">
+				<h2>6. Among your friends are you:</h2>
+				<input type="radio" name="radio6" id="11" value="11"><label class=" three col" for="11">Full of news about<br> everyone</label>
+				<input type="radio" name="radio6" id="12" value="12"><label class=" three col" for="12">One of the last to hear <br>what is going on</label>
+			</section>
+			<section class="testQs cf">
+				<h2>7. Does the idea of making a list of what you should get done over a weekend:</h2>
+				<input type="radio" name="radio7" id="13" value="13"><label class=" four col " for="13">Appeal to<br> you</label>
+				<input type="radio" name="radio7" id="14" value="14" ><label class=" four col" for="14">Leave you<br>cold</label>
+				<input type="radio" name="radio7" id="14a" value="14a" ><label class=" four col" for="14a">Positively depress you</label>
+					</section>
+			<section class="testQs cf">
+				<h2>8. When you have a special job to do, do you like to:</h2>
+				<input type="radio" name="radio8" id="15" value="15" ><label class=" three col" for="15">Organize it carefully <br>before you start</label>
+				<input type="radio" name="radio8" id="16" value="16"><label class=" three col" for="16">Find out what is necessary <br>as you go along</label>
+			</section>
+			<section class="testQs cf">
+				<h2>9. Do yuo tend to have:</h2>
+				<input type="radio" name="radio9" id="17" value="17"><label class=" three col" for="17">Broad friendships with many<br> different people</label>
+				<input type="radio" name="radio9" id="18" value="18"><label class=" three col" for="18">Deep friendship with very<br> few people</label>
+				</section>	
+			<section class="testQs cf">
+				<h2>10. Do you admire more people who are:</h2>
+				<input type="radio" name="radio10" id="19" value="19"><label class=" three col " for="19">Conventional enough to never make themselves conspiculous</label>
+				<input type="radio" name="radio10" id="20" value="20" ><label class=" three col" for="20">Too original and individual to care whether they are conspicuous or not</label>
+			</section>
+				<section class="testQs cf">
+				<h2>11. Do you prefer to:</h2>
+				<input type="radio" name="radio11" id="21" value="21"><label class=" three col" for="21">Arrange picnics, parties etc,<br> well in advance</label>
+				<input type="radio" name="radio11" id="22" value="22"><label class=" three col" for="22">Be free to do whatever looks like fun when the time comes</label>
+			</section>
+			<section class="testQs cf">
+				<h2>12. Do you usually get along better with:</h2>
+				<input type="radio" name="radio12" id="23" value="23"><label class=" three col " for="23">Realisitc people</label>
+				<input type="radio" name="radio12" id="24" value="24" ><label class=" three col" for="24">Imaginative people</label>
+					</section>
+			<section class="testQs cf">
+				<h2>13. When you are with a group of people, would you usually rather:</h2>
+				<input type="radio" name="radio13" id="25" value="25"><label class=" three col" for="25">Join in on the talk </label>
+				<input type="radio" name="radio13" id="26" value="26"><label class=" three col" for="26">Just listen to everyone</label>
+			</section>
+			<section class="testQs cf">
+				<h2>14. Is it a higher compliment to be called:</h2>
+				<input type="radio" name="radio14" id="27" value="27"><label class=" three col" for="27">A person of real feeling</label>
+				<input type="radio" name="radio14" id="28" value="28"><label class=" three col" for="28">A consistently reasonable person</label>
+				</section>	
+			<section class="testQs cf">
+				<h2>15. In reading for pleasure, do you:</h2>
+				<input type="radio" name="radio15" id="29" value="29"><label class=" three col " for="29">Enjoy odd or original ways<br> of saying things</label>
+				<input type="radio" name="radio15" id="30" value="30" ><label class=" three col" for="30">Like writers to say exactly<br> what they mean</label>
+					</section>
+			<section class="testQs cf">
+				<h2>16. Do you:</h2>
+				<input type="radio" name="radio16" id="31" value="31"><label class=" three col" for="31">Talk easily to almost anyone for as long as you have to</label>
+				<input type="radio" name="radio16" id="32" value="32"><label class=" three col" for="32">Find a lot to say only to certain people or under certain conditions</label>
+			</section>
+			<section class="testQs cf">
+				<h2>17. Does following a schedule:</h2>
+				<input type="radio" name="radio17" id="33" value="33"><label class=" three col " for="33">Appeal to you</label>
+				<input type="radio" name="radio17" id="34" value="34" ><label class=" three col" for="34">"Cramp your style"</label>
+					</section>
+			<section class="testQs cf">
+				<h2>18. When it is settled well in advance that you will do a certain thing at a certain time, to you find it:</h2>
+				<input type="radio" name="radio18" id="35" value="35" ><label class=" three col" for="35">Nice to be able to plan accordingly</label>
+				<input type="radio" name="radio18" id="36" value="36"><label class=" three col" for="36">A little unpleasant to be tied down</label>
+			</section>
+			<section class="testQs cf">
+				<h2>19. Are you more successful:</h2>
+				<input type="radio" name="radio19" id="37" value="37"><label class=" three col" for="37">At following a carefully <br>worked out plan</label>
+				<input type="radio" name="radio19" id="38" value="38"><label class=" three col" for="38">At dealing with the unexpected and seeing quickly what should be done</label>
+				</section>	
+			<section class="testQs cf">
+				<h2>20. Would you rather be considered:</h2>
+				<input type="radio" name="radio20" id="39" value="39"><label class=" three col " for="39">A practical person</label>
+				<input type="radio" name="radio20" id="40" value="40" ><label class=" three col" for="40">An ingenious person</label>
+					</section>	<section class=testQs cf">
+				<h2>21. In a large group, do you more often:</h2>
+				<input type="radio" name="radio21" id="41" value="41"><label class=" three col" for="41">Introduce yourself</label>
+				<input type="radio" name="radio21" id="42" value="42"><label class=" three col" for="42">Get introduced</label>
+			</section>
+			<section class="testQs cf">
+				<h2>22. Do you usually:</h2>
+				<input type="radio" name="radio22" id="43" value="43"><label class=" three col " for="43">Value sentimental more than logic</label>
+				<input type="radio" name="radio22" id="44" value="44" ><label class=" three col" for="44">Value logic more than sentimental</label>
+					</section>
+			<section class="testQs cf">
+				<h2>23. Would you rather have as a friend:</h2>
+				<input type="radio" name="radio23" id="45" value="45" ><label class=" three col" for="45">Someone who is always coming up with new ideas</label>
+				<input type="radio" name="radio23" id="46" value="46"><label class=" three col" for="46">Someone who has both feet<br> on the ground</label>
+			</section>
+			<section class="testQs cf">
+				<h2>24. Can the new people you meet tell what you are interested in:</h2>
+				<input type="radio" name="radio24" id="47" value="47"><label class=" three col" for="47">Right away</label>
+				<input type="radio" name="radio24" id="48" value="48"><label class=" three col" for="48">Only after they really get to know you</label>
+				</section>	
+			<section class="testQs cf">
+				<h2>25. In your daily work, do you:</h2>
+				<input type="radio" name="radio25" id="49" value="49"><label class=" three col " for="49">Usually plan you work so you don't need to work under pressure</label>
+				<input type="radio" name="radio25" id="50" value="50" ><label class=" three col" for="50">Rather enjoy an emergency that makes you work against time</label>
+					</section>					
+			<section class="testQs cf">
+				<h2>26. Do you usually:</h2>
+				<input type="radio" name="radio26" id="51" value="51"><label class=" three col " for="51">Show your feelings freely</label>
+				<input type="radio" name="radio26" id="52" value="52" ><label class=" three col" for="52">Keep your feelings to yourself</label>
+					</section>	
+		<hr>
+		<h4>Part 2. Which word in each pair appeals to you more?</h4>
+		<h2>27.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio27" id="53" value="53"><label class=" three col " for="53">Scheduled</label>
+				<input type="radio" name="radio27" id="54" value="54" ><label class=" three col" for="54">Unplanned</label>
+			</section>
+		<h2>28.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio28" id="55" value="55"><label class=" three col " for="55">Facts</label>
+				<input type="radio" name="radio28" id="56" value="56" ><label class=" three col" for="56">Ideas</label>
+			</section>
+		<h2>29.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio29" id="57" value="57"><label class=" three col " for="57">Quiet</label>
+				<input type="radio" name="radio29" id="58" value="58" ><label class=" three col" for="58">Hearty</label>
+			</section>
+		<h2>30.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio30" id="59" value="59"><label class=" three col " for="59">Convincing</label>
+				<input type="radio" name="radio30" id="60" value="60" ><label class=" three col" for="60">Touching</label>
+			</section>
+		<h2>31.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio31" id="61" value="61"><label class=" three col " for="61">Imaginative</label>
+				<input type="radio" name="radio31" id="62" value="62" ><label class=" three col" for="62">Matter-of-fact</label>
+			</section>
+		<h2>32.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio32" id="63" value="63"><label class=" three col " for="63">Benefits</label>
+				<input type="radio" name="radio32" id="64" value="64" ><label class=" three col" for="64">Blessings</label>
+			</section>
+		<h2>33.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio33" id="65" value="65"><label class=" three col " for="65">Peacemaker</label>
+				<input type="radio" name="radio33" id="66" value="66" ><label class=" three col" for="66">Judge</label>
+			</section>
+		<h2>34.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio34" id="67" value="67"><label class=" three col " for="67">Systematic</label>
+				<input type="radio" name="radio34" id="68" value="68" ><label class=" three col" for="68">Spontaneous</label>
+			</section>
+		<h2>35.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio35" id="69" value="69"><label class=" three col " for="69">Statement</label>
+				<input type="radio" name="radio35" id="70" value="70" ><label class=" three col" for="70">Concept</label>
+			</section>	
+		<h2>36.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio36" id="71" value="71"><label class=" three col " for="71">Reserved</label>
+				<input type="radio" name="radio36" id="72" value="72" ><label class=" three col" for="72">Talkative</label>
+			</section>
+		<h2>37.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio37" id="73" value="73"><label class=" three col " for="73">Analyze</label>
+				<input type="radio" name="radio37" id="74" value="74" ><label class=" three col" for="74">Sympathize</label>
+			</section>
+		<h2>38.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio38" id="75" value="75"><label class=" three col " for="75">Create</label>
+				<input type="radio" name="radio38" id="76" value="76" ><label class=" three col" for="76">Make</label>
+			</section>
+		<h2>39.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio39" id="77" value="77"><label class=" three col " for="77">Determined</label>
+				<input type="radio" name="radio39" id="78" value="78" ><label class=" three col" for="78">Devoted</label>
+			</section>
+		<h2>40.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio40" id="79" value="79"><label class=" three col " for="79">Gentle</label>
+				<input type="radio" name="radio40" id="80" value="80" ><label class=" three col" for="80">Firm</label>
+			</section>
+		<h2>41.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio41" id="81" value="81"><label class=" three col " for="81">Systematic</label>
+				<input type="radio" name="radio41" id="82" value="82" ><label class=" three col" for="82">Casual</label>
+			</section>
+		<h2>42.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio42" id="83" value="83"><label class=" three col " for="83">Certainty</label>
+				<input type="radio" name="radio42" id="84" value="84" ><label class=" three col" for="84">Theory</label>
+			</section>
+		<h2>43.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio43" id="85" value="85"><label class=" three col " for="85">Calm</label>
+				<input type="radio" name="radio43" id="86" value="86" ><label class=" three col" for="86">Lively</label>
+			</section>
+		<h2>44.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio44" id="87" value="87"><label class=" three col " for="87">Justice</label>
+				<input type="radio" name="radio44" id="88" value="88" ><label class=" three col" for="88">Mercy</label>
+			</section>	
+		<h2>45.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio45" id="89" value="89"><label class=" three col " for="89">Fascinating</label>
+				<input type="radio" name="radio45" id="90" value="90" ><label class=" three col" for="90">Sensible</label>
+			</section>
+		<h2>46.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio46" id="91" value="91"><label class=" three col " for="91">Firm-Minded</label>
+				<input type="radio" name="radio46" id="92" value="92" ><label class=" three col" for="92">Warm Hearted</label>
+			</section>
+		<h2>47.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio47" id="93" value="93"><label class=" three col " for="93">Feeling</label>
+				<input type="radio" name="radio47" id="94" value="94" ><label class=" three col" for="94">Thinking</label>
+			</section>
+		<h2>48.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio48" id="95" value="95"><label class=" three col " for="95">Literal</label>
+				<input type="radio" name="radio48" id="96" value="96" ><label class=" three col" for="96">Figurative</label>
+			</section>
+		<h2>49.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio49" id="97" value="97"><label class=" three col " for="97">Foresight</label>
+				<input type="radio" name="radio49" id="98" value="98" ><label class=" three col" for="98">Compassion</label>
+			</section>
+		<h2>50.</h2>	
+			<section class="testQs cf ">
+				<input type="radio" name="radio50" id="99" value="99"><label class=" three col " for="99">Hard</label>
+				<input type="radio" name="radio50" id="100" value="100" ><label class=" three col" for="100">Soft</label>
+			</section>
+			<input class="submit" id="submit" name="submit" type="button" onclick=check(); value="Submit">		
+		</form>
+	</div>
+
+
+	
+<div class="footer">
+  <h2>Credits</h2>
+  <p>The pictures in my slideshow at the top of every page are from <a href="http://www.personalitytypes.xyz">http://www.personalitytypes.xyz</a>. </p>
+  <p>The information for what each letter means comes from <a href="https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/">https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/</a>.</p>
+  <p>Information on individual personality types comes from <a href="https://www.16personalities.com/personality-types">https://www.16personalities.com/personality-types</a>.</p>
+  <p>Test comes from a pdf from <a href="https://psychobabble4u.wordpress.com/2015/11/23/what-is-your-true-mbti-type/">https://psychobabble4u.wordpress.com</a></p>
+  <p>Form design idea comes from the checkout form by Rosa from <a href="https://freefrontend.com/css-radio-buttons/">https://freefrontend.com/css-radio-buttons/</a> (REDESIGNED)</p>
+  </div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+</body>
+</html>
